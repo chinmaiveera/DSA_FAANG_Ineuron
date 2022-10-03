@@ -17,8 +17,8 @@ import java.lang.Math;
 // (ii)total time complexity = n*logn + n*logn = O(nlogn)
 public class FindTriplet {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, -5};
-        int target = 10;
+        int[] arr = {1, 2, 3, 4, -5};//input array
+        int target = 10;//target
         build_heap(arr);
         sort(arr,arr.length);
         int ans = nearst_sum(arr,arr.length,target);
@@ -26,24 +26,30 @@ public class FindTriplet {
 
     }
     static int nearst_sum(int[] arr,int n,int target){
+        //initially take first and last elements as first two elements i.e i,j
         int i=0,j=n-1,k,local_target,sum,nearest = MAX_VALUE,diff;
         while(j-i > 1){
             local_target = target - (arr[i] + arr[j]);
+            //find best third element "k" between i,j such that sum is as near as possible to target.
             k = find_best_third_number(arr,i+1,j-1,local_target);
             sum = arr[i] + arr[j] + arr[k];
             if(sum == target){
                 return sum;
             }
+            //if sum is less than target make i = i+1, else make j = j+1
             if(sum < target)
                 i += 1;
             else
                 j -= 1;
+            //if current sum is nearer than the nearest sum yet. then record current sum as nearst.
             if(Math.abs(target-sum) < Math.abs(target-nearest))
                 nearest = sum;
         }
         return nearest;
     }
     static int find_best_third_number(int[] arr,int i,int j,int target){
+        //Here we are finding the best third number b/w i,j that makes the sum as near as possible to target.
+        //As array is sorted we are using binary search to find the same.
         int start = i;
         int mid;
         while(i<j){
@@ -58,6 +64,8 @@ public class FindTriplet {
                 i = mid+1;
             }
         }
+        // if the target is in b/w two elements then we return the element that is nearer to the target.if target is lesser than first element
+        // then return first element.
         if(i == start || Math.abs(arr[i] - target) < Math.abs(arr[i-1] - target))
             return i;
         else

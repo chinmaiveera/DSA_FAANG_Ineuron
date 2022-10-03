@@ -1,0 +1,15 @@
+4.An almost sorted array is given to us and the task is to sort that array completely. Then,
+which sorting algorithm would you prefer and why?
+Ans. Insertion Sort
+To know the reason let us look at its algorithm
+To sort an array of size N in ascending order:
+    • Iterate from arr[1] to arr[N] over the array.
+    • Compare the current element (key) to its predecessor.
+    • If the key element is smaller than its predecessor, compare it to the elements before. Move  the greater elements one position up to make space 
+    for the swapped element.
+In the above algorithm we can clearly see that at every pass swapping and further comparisions are done only if the predecessor is not in order.
+In almost sorted array there are very less elements that are not in order. So, therefore no unnessasary  swapping’s or comparisions.
+
+
+
+

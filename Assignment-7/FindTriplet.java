@@ -11,10 +11,7 @@ import java.lang.Math;
 //(iv)we record the best sum that is as near as possible to target
 
 
-//Time Complexity: (i) We are using heap sort to sort the elements.Its worst case time complexity is n*logn
-// (i) At each run, time complexity to find the third number is log(n) and time
-//     complexity to find first two numbers is 1. And we have n such runs. Therefore, time complexity is n*logn.
-// (ii)total time complexity = n*logn + n*logn = O(nlogn)
+
 public class FindTriplet {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, -5};//input array
@@ -23,7 +20,10 @@ public class FindTriplet {
         sort(arr,arr.length);
         int ans = nearst_sum(arr,arr.length,target);
         System.out.println(ans);
-
+        //Time Complexity: (i) We are using heap sort to sort the elements.Its worst case time complexity is n*logn
+        // (i) At each run, time complexity to find the third number is log(n) and time
+        //     complexity to find first two numbers is 1. And we have n such runs. Therefore, time complexity is n*logn.
+        // (ii)total time complexity = n*logn + n*logn = O(nlogn) 
     }
     static int nearst_sum(int[] arr,int n,int target){
         //initially take first and last elements as first two elements i.e i,j

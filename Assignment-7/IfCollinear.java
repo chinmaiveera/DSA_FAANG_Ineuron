@@ -6,7 +6,7 @@ public class IfCollinear {
     //are collinear or not.
     //Approach: Any three given point connected forms a triangle.
     //          In a triangle if sum of two of its smallest sides is equal to the largest side
-    //          then its co-ordinates form a straight line.
+    //          then its smaller sides coinside with largest side and forms a straight line.
     //          Hence, we check weather the longest side is equal to sum of smaller sides.
     public static void main(String[] args) {
         int[][] arr = {{0,5},{1,3},{4,3}};
@@ -41,6 +41,7 @@ public class IfCollinear {
         return sqrt((x2 - x1)*(x2 - x1) + (y2-y1)*(y2-y1));
     }
     static void swap(double[] arr,int i,int j){
+        //swap arr[i],arr[j]
         if(i < arr.length && j < arr.length){
             double temp = arr[i];
             arr[i] = arr[j];

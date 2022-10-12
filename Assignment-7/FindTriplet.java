@@ -66,7 +66,7 @@ public class FindTriplet {
         }
         // if the target is in b/w two elements then we return the element that is nearer to the target.if target is lesser than first element
         // then return first element.
-        if(i == start || Math.abs(arr[i] - target) < Math.abs(arr[i-1] - target))
+        if(i == start || Math.abs(arr[i] - target) <= Math.abs(arr[i-1] - target))
             return i;
         else
             return i-1;

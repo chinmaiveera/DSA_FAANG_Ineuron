@@ -12,8 +12,10 @@ public class SortColors {
         int i=-1,j=0,k=arr.length;
         while(j<k){
             //if arr[j] is 2 then decrement k and swap k,j values
-            if(arr[j] == 2){
-                k-=1;
+           while(arr[j] == 2){
+                k -= 1;
+                if(j >= k)
+                    return;
                 swap(arr,j,k);
             }
             //if arr[j] is 0 then increment i and swap i,j values

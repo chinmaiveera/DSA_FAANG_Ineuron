@@ -1,5 +1,5 @@
 //Given two integers, dividend and divisor, divide the two integers without using multiplication, division, and mod operator.
-public class Divide {
+public class Divide_two_integers {
     public static void main(String[] args) {
         int dividend = 1214748364;
         int divisor = 7;

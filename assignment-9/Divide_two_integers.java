@@ -5,7 +5,7 @@ public class Divide_two_integers {
         int divisor = 7;
         int ans = divide_two(dividend,divisor);
         System.out.println(ans);
-        //Time Coplexity: O(log(dividend/divisor)base2 * log(dividend/divisor)base2)
+        //Time Coplexity: doubt regarding the same. I'm sure it is of order of log(n).
     }
     static int divide_two(int dividend,int divisor){
         //computes the quotient of given dividend and divisor only by using additions and subtractions
@@ -16,7 +16,7 @@ public class Divide_two_integers {
         //we keep on increasing num until |dividend - num| < divisor
         while(dividend - num >= divisor || dividend - num < -divisor){
 //            //here the value to be added to the num is decided by adder,adder starts with divisor
-              //the value to be added to the count is decided by count_adder,count_adder starts with divisor
+              //the value to be added to the count is decided by count_adder,count_adder starts with 1
            timer++;
             if(dividend - num >= divisor){
                 //we record the previous count value and previous num value before proceeding further

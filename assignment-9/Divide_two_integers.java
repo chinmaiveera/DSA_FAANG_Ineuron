@@ -5,6 +5,7 @@ public class Divide_two_integers {
         int divisor = 7;
         int ans = divide_two(dividend,divisor);
         System.out.println(ans);
+        //Time Coplexity: O(log(dividend/divisor)base2 * log(dividend/divisor)base2)
     }
     static int divide_two(int dividend,int divisor){
         //computes the quotient of given dividend and divisor only by using additions and subtractions

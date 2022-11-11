@@ -2,7 +2,7 @@ import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+//Hasing using digit folding hash function.
 public class DigitFolding {
     //Time Complexity:
     //finding hash value:independent of no of key value pairs.

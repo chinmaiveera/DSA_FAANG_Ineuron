@@ -3,7 +3,7 @@ import javafx.util.Pair;
 import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Collections;
-
+//Hashing using middle square method hash function.
 public class MidSquare {
     //Time Complexity:
     //finding hash value:independent of no of key value pairs.

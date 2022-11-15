@@ -2,7 +2,7 @@ import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+//hasing using double hash function.
 public class DoubleHash {
     public static void main(String[] args) {
         Pair<String,Integer>[] p = new Pair[7];

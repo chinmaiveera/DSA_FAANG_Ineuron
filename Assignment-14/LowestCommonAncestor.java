@@ -7,7 +7,10 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-//below code executed and accepted on leetcode.
+
+
+//BELOW CODE EXECUTED AND ACCEPTED ON LEETCODE.
+
 //Lowest Common Ancestor of a Binary Search Tree
 class LowestCommonAncestor {
     //below function takes the root node and other two node part of same tree and

@@ -13,7 +13,9 @@
  *     }
  * }
  */
-//below code executed and accepted on leetcode.
+
+//BELOW CODE EXECUTED AND ACCEPTED ON LEETCODE.
+
 //Recover Binary Search Tree
 class RecoverTree {
     //this function takes the root node of tree and rearrange the two swapped elements
@@ -41,9 +43,9 @@ class RecoverTree {
         //now swap the values of "first" and "second" nodes.
         swap(first,second);
         //TimeComplexity:
-        //for Inorder traversal: n,where n is total elements of tree.
-        //for searching:n,where n is total elements of tree.
-        //for swapping:1
+        //  for Inorder traversal: n,where n is total elements of tree.
+        //  for searching:n,where n is total elements of tree.
+        //  for swapping:1
         //Therefore TimeComplexity will be n+n+1 ~ O(n)
         
     
